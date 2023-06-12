@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -al | find . -empty | xargs -n 1 basename
+ls -al | find . -empty -printf '%f\n'
